@@ -7,7 +7,7 @@ import { contactDiv } from "./ContactApp";
 
 
 const AddText = () => {
-    const {setAddBtnToggle,addContact,updateBtnContact,setUpdateBtnContact,userId,updateUser,setUpdateUser,contacts} = useContext(contactDiv);
+    const {setAddBtnToggle,addContact,updateBtnContact,setUpdateBtnContact,updateUser} = useContext(contactDiv);
 
   const handleAddForm = (newUser) => {
     addContact(newUser);

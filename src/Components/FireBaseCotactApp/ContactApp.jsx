@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState } from "react"
 import ContactCard from "./ContactCard"
 import Navbar from "./Navbar"
-import {addDoc, collection, deleteDoc, doc, getDocs, onSnapshot} from "firebase/firestore";
+import {addDoc, collection, deleteDoc, doc,  onSnapshot} from "firebase/firestore";
 import { db } from "../../config/firebase";
 import AddText from "./AddText";
 
@@ -70,7 +70,7 @@ export const contactDiv = createContext();
   contacts.map(user=>{
     if(searchValue==="")
     return  <ContactCard user={user} key={user.id}/>
-   else if(user.name.toLowerCase().includes(searchValue))
+   else if(user.name.toLowerCase().includes(searchValue)||user.email.toLowerCase().includes(searchValue))
     return  <ContactCard user={user} key={user.id}/>
   })
 

@@ -3,11 +3,11 @@ import { RiEditCircleLine } from "react-icons/ri";
 import { FaTrash } from "react-icons/fa";
 import { useContext } from "react";
 import { contactDiv } from "./ContactApp";
-import { doc, updateDoc } from "firebase/firestore";
-import { db } from "../../config/firebase";
 
+
+// eslint-disable-next-line react/prop-types
 const ContactCard = ({ user }) => {
-  const { deleteContact,setAddBtnToggle,contacts,addBtnToggle,updateBtnContact,setUpdateBtnContact,userId,setUser,updateUser,setUpdateUser} = useContext(contactDiv);
+  const { deleteContact,contacts,setUpdateBtnContact,setUpdateUser} = useContext(contactDiv);
 
 
 const handleUpdateClick=async(id)=>{

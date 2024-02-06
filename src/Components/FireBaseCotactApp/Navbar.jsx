@@ -5,7 +5,7 @@ import { contactDiv } from "./ContactApp";
 
 const Navbar = () => {
 
-   const {searchValue,SetSearchValue,addBtnToggle,setAddBtnToggle} = useContext(contactDiv)
+   const {SetSearchValue,setAddBtnToggle} = useContext(contactDiv)
     
    const handleSearchChange=(e)=>{
      SetSearchValue(e.target.value.toLowerCase())
