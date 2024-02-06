@@ -1,15 +1,18 @@
-import './App.css'
+import ContactApp from "./Components/FireBaseCotactApp/ContactApp"
+
+
+
 
 function App() {
 
-
   return (
-    <>
-    <div className='bg-red-500'>
-       Adnan
+    <div>
+     <ContactApp/>
     </div>
-    </>
   )
 }
 
 export default App
+
+
+
